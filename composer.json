@@ -1,0 +1,30 @@
+{
+    "name": "bytepath/flashbang",
+    "description": "A library to send flash notifications to the user of your web app",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^5.6",
+        "mockery/mockery": "^1.0"
+    },
+    "require-dev": {
+    	"orchestra/testbench": "^3.6",
+        "phpunit/phpunit": "^7.0"
+    },	
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Bytepath\\FlashBang\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bytepath\\FlashBang\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrew Reddin",
+            "email": "andrew@bytepath.ca"
+        }
+    ]
+}
