@@ -26,5 +26,15 @@
             "name": "Andrew Reddin",
             "email": "andrew@bytepath.ca"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bytepath\\FlashBang\\FlashBangServiceProvider"
+            ],
+            "aliases": {
+                "FlashBang": "Bytepath\\FlashBang\\Facades\\FlashBang"
+            }
+        }
+    },
 }

@@ -15,7 +15,7 @@ class FlashBangServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->loadViewsFrom(__DIR__ . "/Views", "flashbang");
     }
 
     /**
