@@ -52,7 +52,7 @@ class Flasher
      */
     public function success($message = "Success!", $logMessage = null)
     {
-        $this->flash($message, "success", $logMessage);
+        $this->flash($message, "success", $logMessage, "success");
     }
 
     /**
