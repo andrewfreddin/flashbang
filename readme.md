@@ -1,6 +1,8 @@
 # FlashBang
 ### A simple library to assist with flashing alert messages to users of your Laravel applications. 
-Display context specific messages to your users that will be displayed once then never shown again. 
+Display context specific messages to your users that will be displayed once then never shown again.
+
+In addition to creating flash messages, this library allows you to write to the Laravel log file to allow you to keep track of what has been shown to the user
 #### Installation 
 
     composer require bytepath/flashbang
