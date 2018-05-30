@@ -48,7 +48,7 @@ You can now send a message to the user of your application using one of the meth
 To add a FlashBang message to your view, simply add the following snippet 
 
     @include("flashbang::messages")
-on whatever view you wish to display these messages on. Messages can be displayed multiple times on the same page if for
+tn whatever view you wish to display these messages on. Messages can be displayed multiple times on the same page if for
 whatever reason you wanted to do that.
 
 By default this sub view will also show Form validation errors (and any other session errors).
