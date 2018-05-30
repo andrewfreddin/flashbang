@@ -2,7 +2,7 @@
 namespace Bytepath\FlashBang;
 
 use Bytepath\FlashBang\Flasher;
-use Illuminate\Log\Writer;
+use Illuminate\Log\Logger;
 use Illuminate\Session\SessionManager;
 use Illuminate\Support\ServiceProvider;
 
@@ -26,7 +26,7 @@ class FlashBangServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(Flasher::class, function($app){
-            $log = $app->make(Writer::class);
+            $log = $app->make(Logger::class);
             $session =  $app->make(SessionManager::class);
             return new Flasher($log, $session);
         });
