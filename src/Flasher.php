@@ -93,16 +93,12 @@ class Flasher
      */
     protected function flash($message, $class, $logMessage = null, $logMethod = "info")
     {
-//        if($logMessage)
-//        {
-//            //Log this as this should really only happen if someone is trying to be malicious
-//            $this->log->{$logMethod}($logMessage, [
-//                "url" => url()->current()
-//            ]);
-//        }
+        if($logMessage) {
+            $this->log->{$logMethod}($logMessage, []);
+        }
 
         //Add a flash message to inform the user that there was an error
         $this->session->flash('message', $message);
-        $this->session->flash('messageClass', $class);
+        $this->session->flash('messageClass', "alert-" . $class);
     }
 }
